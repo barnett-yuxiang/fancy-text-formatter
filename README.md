@@ -1,8 +1,32 @@
-# React + Vite
+# Bold Text Formatter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple web tool to convert regular text into stylized bold Unicode characters, commonly used in WeChat and other social media platforms.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Convert text to Serif bold style (𝐀𝐁𝐂)
+- Convert text to Sans-serif bold style (𝗔𝗕𝗖)
+- Support for both uppercase and lowercase letters
+- Preserve non-letter characters (numbers, punctuation, etc.)
+- Character count limit (2000)
+- One-click copy to clipboard
+
+## Tech Stack
+
+- React 18
+- Vite
+- CSS3 (Pure CSS, no external UI libraries)
+- Unicode text transformation
+
+## Development
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+```
