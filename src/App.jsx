@@ -36,7 +36,7 @@ function App() {
 
   return (
     <div className="container">
-      <h1>花式文本转换器</h1>
+      <h1>粗体特效字体生成器</h1>
       
       <div className="input-section">
         <textarea
