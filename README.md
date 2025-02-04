@@ -3,11 +3,11 @@
 A simple web tool to convert regular text into stylized bold Unicode characters, commonly used in WeChat and other social media platforms.
 
 ## Features
-
-- Convert text to Serif bold style (𝐀𝐁𝐂)
-- Convert text to Sans-serif bold style (𝗔𝗕𝗖)
+- Convert text to Serif bold style (𝐀𝐁𝐂𝟏𝟐𝟑)
+- Convert text to Sans-serif bold style (𝗔𝗕𝗖𝟬𝟭𝟮)
 - Support for both uppercase and lowercase letters
-- Preserve non-letter characters (numbers, punctuation, etc.)
+- Support for numbers
+- Preserve non-letter characters (punctuation, etc.)
 - Character count limit (2000)
 - One-click copy to clipboard
 

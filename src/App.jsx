@@ -28,9 +28,9 @@ function App() {
   const copyToClipboard = async (text) => {
     try {
       await navigator.clipboard.writeText(text);
-      alert('已复制到剪贴板');
+      alert('已复制到剪贴板！');  // 添加感叹号使提示更友好
     } catch (err) {
-      alert('复制失败');
+      alert('复制失败，请重试');  // 添加更详细的错误提示
     }
   };
 
