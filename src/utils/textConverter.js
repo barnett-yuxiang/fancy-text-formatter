@@ -28,7 +28,6 @@ const styles = {
 };
 
 export const convertToStyledText = (text, style) => {
-  return text.split('').map(char => {
-    return styles[style][char] || char;
-  }).join('');
+  if (!text || !style || !styles[style]) return text;
+  return text.split('').map(char => styles[style][char] || char).join('');
 };

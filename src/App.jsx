@@ -18,7 +18,7 @@ function App() {
       alert('请输入文本');
       return;
     }
-    
+
     setConvertedTexts({
       serif: convertToStyledText(inputText, 'serif'),
       sans: convertToStyledText(inputText, 'sans')
@@ -37,7 +37,7 @@ function App() {
   return (
     <div className="container">
       <h1>粗体特效字体生成器</h1>
-      
+
       <div className="input-section">
         <textarea
           value={inputText}
@@ -58,7 +58,7 @@ function App() {
           </div>
           <div className="result-text">
             {convertedTexts.serif}
-            <button 
+            <button
               className="copy-button"
               onClick={() => copyToClipboard(convertedTexts.serif)}
             >
@@ -66,14 +66,14 @@ function App() {
             </button>
           </div>
         </div>
-        
+
         <div className="result-item">
           <div className="result-item-header">
             <span>Sans 粗体</span>
           </div>
           <div className="result-text">
             {convertedTexts.sans}
-            <button 
+            <button
               className="copy-button"
               onClick={() => copyToClipboard(convertedTexts.sans)}
             >
