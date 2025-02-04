@@ -48,43 +48,39 @@ function App() {
         <div className="char-count">
           {inputText.length}/2000
         </div>
-        <button onClick={handleGenerate}>生成</button>
+        <button className="generate-button" onClick={handleGenerate}>生成</button>
       </div>
 
-      <div className="results-section">
-        {(convertedTexts.serif || convertedTexts.sans) ? (
-          <>
-            <div className="result-item">
-              <div className="result-item-header">
-                <span>Serif 粗体</span>
-              </div>
-              <div className="result-text">
-                {convertedTexts.serif}
-                <button 
-                  className="copy-button"
-                  onClick={() => copyToClipboard(convertedTexts.serif)}
-                >
-                  复制
-                </button>
-              </div>
-            </div>
-            
-            <div className="result-item">
-              <div className="result-item-header">
-                <span>Sans 粗体</span>
-              </div>
-              <div className="result-text">
-                {convertedTexts.sans}
-                <button 
-                  className="copy-button"
-                  onClick={() => copyToClipboard(convertedTexts.sans)}
-                >
-                  复制
-                </button>
-              </div>
-            </div>
-          </>
-        ) : null}
+      <div className={`results-section ${convertedTexts.serif || convertedTexts.sans ? 'has-content' : ''}`}>
+        <div className="result-item">
+          <div className="result-item-header">
+            <span>Serif 粗体</span>
+          </div>
+          <div className="result-text">
+            {convertedTexts.serif}
+            <button 
+              className="copy-button"
+              onClick={() => copyToClipboard(convertedTexts.serif)}
+            >
+              复制
+            </button>
+          </div>
+        </div>
+        
+        <div className="result-item">
+          <div className="result-item-header">
+            <span>Sans 粗体</span>
+          </div>
+          <div className="result-text">
+            {convertedTexts.sans}
+            <button 
+              className="copy-button"
+              onClick={() => copyToClipboard(convertedTexts.sans)}
+            >
+              复制
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );

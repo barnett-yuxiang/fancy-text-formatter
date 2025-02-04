@@ -1,98 +1,121 @@
-.container {
-  max-width: 800px;
+body {
+  margin: 0;
   min-height: 100vh;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  background-color: #f8f9fa;
+  overflow-y: scroll;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;  /* 改为600px统一宽度 */
+  min-height: 100vh;
   padding: 40px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f8f9fa;
-}
-
-h1 {
-  color: #1a1a1a;
-  margin-bottom: 40px;
-  font-size: 2.5rem;
-  font-weight: 600;
+  box-sizing: border-box;
 }
 
 .input-section {
   width: 100%;
-  margin-bottom: 40px;
-  min-height: 250px;
+  box-sizing: border-box;
 }
 
 textarea {
   width: 100%;
   height: 150px;
   padding: 16px;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   border: 2px solid #e1e4e8;
   border-radius: 8px;
   resize: vertical;
   font-size: 16px;
   background-color: white;
   transition: border-color 0.3s ease;
-}
-
-textarea:focus {
-  outline: none;
-  border-color: #1677ff;
+  box-sizing: border-box;
 }
 
 .char-count {
   text-align: right;
+  margin-bottom: 12px;
   color: #666;
-  margin-bottom: 16px;
   font-size: 14px;
 }
 
-button {
-  padding: 10px 24px;
+.generate-button {
+  width: 100%;
+  padding: 10px 0;
   background-color: #1677ff;
   color: white;
   border: none;
   border-radius: 6px;
   cursor: pointer;
   font-size: 16px;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-button:hover {
+.generate-button:hover {
   background-color: #4096ff;
 }
 
 .results-section {
   width: 100%;
   margin-top: 20px;
+  opacity: 0.4;
+  transition: opacity 0.3s ease;
+  box-sizing: border-box;
 }
 
 .result-item {
+  width: 100%;
   margin-bottom: 24px;
-  padding: 20px;
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-}
-
-.result-item-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 12px;
+  box-sizing: border-box;
 }
 
 .result-text {
-  margin: 12px 0;
-  padding: 16px;
+  position: relative;
+  width: 100%;
+  height: 200px;
+  padding: 16px 20px;
+  padding-right: 80px;
   background-color: #f5f7fa;
-  border-radius: 6px;
-  word-break: break-all;
+  border-radius: 0 0 8px 8px;
   font-size: 16px;
   line-height: 1.6;
-  position: relative;
+  overflow-y: scroll;
+  word-break: break-all;
+  box-sizing: border-box;
+  white-space: pre-wrap;
 }
 
+.copy-button {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  padding: 6px 16px;
+  background-color: #ffffff;
+  color: #1677ff;
+  border: 1px solid #1677ff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.copy-button:hover {
+  background-color: #1677ff;
+  color: white;
+}
+
+.has-content {
+  opacity: 1;
+}
 .copy-button {
   background-color: #f0f0f0;
   color: #1a1a1a;
