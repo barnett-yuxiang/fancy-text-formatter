@@ -70,6 +70,8 @@ const ResultGrid: React.FC<ResultGridProps> = ({ results }) => {
             border: "1.5px solid #e3ecfa",
             transition: "box-shadow 0.2s, border 0.2s",
           }}
+          onMouseEnter={() => {}}
+          onMouseLeave={() => {}}
         >
           {/* Title bar */}
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '1.1rem 1.25rem 0.5rem 1.25rem', background: '#f0f4ff', borderTopLeftRadius: 16, borderTopRightRadius: 16, borderBottom: '1px solid #e3ecfa' }}>
@@ -94,8 +96,6 @@ const ResultGrid: React.FC<ResultGridProps> = ({ results }) => {
                   display: 'flex',
                   alignItems: 'center',
                 }}
-                onMouseEnter={e => e.currentTarget.style.background = '#bcd4fa'}
-                onMouseLeave={e => e.currentTarget.style.background = '#e3ecfa'}
               >
                 Copy
               </button>
