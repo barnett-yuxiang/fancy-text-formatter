@@ -3,15 +3,15 @@ import React, { useState } from "react";
 import Header from "./Header";
 import InputArea from "./InputArea";
 import ResultGrid from "./ResultGrid";
+import { toBoldSerif, toBoldSans, toItalicSerif, toItalicSans } from "./fancyText";
 
 // Placeholder for text transformation logic
 function generateAllStyles(input: string) {
-  // For now, just return the input for all four styles
   return {
-    boldSerif: input,
-    boldSans: input,
-    italicSerif: input,
-    italicSans: input,
+    boldSerif: toBoldSerif(input),
+    boldSans: toBoldSans(input),
+    italicSerif: toItalicSerif(input),
+    italicSans: toItalicSans(input),
   };
 }
 
@@ -40,7 +40,7 @@ export default function Home() {
       }}
     >
       <Header />
-      <main style={{ width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: 80 }}>
+      <main style={{ width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: 36 }}>
         <InputArea value={input} setValue={setInput} onGenerate={handleGenerate} />
         <ResultGrid results={results} />
         {/* Message Area can remain here for future use */}

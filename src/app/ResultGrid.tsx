@@ -100,7 +100,28 @@ const ResultGrid: React.FC<ResultGridProps> = ({ results }) => {
             </div>
           </div>
           {/* Content */}
-          <div style={{ padding: '1.1rem 1.25rem 1.25rem 1.25rem', fontSize: 18, wordBreak: 'break-word', minHeight: 40 }}>
+          <div
+            style={{
+              padding: '1.1rem 1.25rem 1.25rem 1.25rem',
+              fontSize: 16,
+              wordBreak: 'break-word',
+              minHeight: 48,
+              maxHeight: 220,
+              width: 420,
+              whiteSpace: 'pre-wrap',
+              border: '1px solid #e0e3e8',
+              borderRadius: 10,
+              background: '#f8fafb',
+              margin: 16,
+              fontFamily: 'inherit',
+              userSelect: 'all',
+              cursor: 'default',
+              overflowY: 'auto',
+              boxSizing: 'border-box',
+            }}
+            tabIndex={-1}
+            aria-readonly="true"
+          >
             {results[key as keyof Results]}
           </div>
         </div>

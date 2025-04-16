@@ -17,12 +17,12 @@ const InputArea: React.FC<InputAreaProps> = ({ value, setValue, onGenerate }) =>
   return (
     <section
       style={{
-        width: "100%",
+        width: 600,
         maxWidth: 600,
         background: "#fff",
         borderRadius: 18,
         boxShadow: "0 2px 12px 0 rgba(0,0,0,0.04)",
-        padding: "2rem 2rem 1.5rem 2rem",
+        padding: "1.1rem 1.25rem 1.25rem 1.25rem",
         marginBottom: 36,
       }}
     >
@@ -33,8 +33,8 @@ const InputArea: React.FC<InputAreaProps> = ({ value, setValue, onGenerate }) =>
         id="input-text"
         style={{
           width: "100%",
-          minHeight: 90,
-          maxHeight: 240,
+          minHeight: 120,
+          maxHeight: 320,
           marginTop: 10,
           borderRadius: 10,
           border: "1.5px solid #e0e3e8",
