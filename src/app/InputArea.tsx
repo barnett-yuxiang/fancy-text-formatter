@@ -1,17 +1,18 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 
 const MAX_LENGTH = 2000;
 
-const InputArea: React.FC = () => {
-  const [value, setValue] = useState("");
+type InputAreaProps = {
+  value: string;
+  setValue: (v: string) => void;
+  onGenerate: () => void;
+};
 
+const InputArea: React.FC<InputAreaProps> = ({ value, setValue, onGenerate }) => {
   const handleClear = () => setValue("");
   const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => setValue(e.target.value);
-  const handleGenerate = () => {
-    // Placeholder for future transformation logic
-  };
 
   return (
     <section
@@ -53,7 +54,7 @@ const InputArea: React.FC = () => {
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: 10 }}>
         <div>
           <button
-            onClick={handleGenerate}
+            onClick={onGenerate}
             style={{
               background: "#222",
               color: "#fff",
