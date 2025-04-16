@@ -41,6 +41,7 @@ const ResultGrid: React.FC<ResultGridProps> = ({ results }) => {
       }, 1500);
     } catch (e) {
       // Optionally handle copy error
+      console.error("Copy to clipboard failed:", e);
     }
   };
 
