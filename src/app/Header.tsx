@@ -5,7 +5,7 @@ const Header: React.FC = () => (
     style={{
       width: "100%",
       height: 56,
-      background: "#fff",
+      background: "linear-gradient(90deg, #e3ecfa 0%, #f5e8fa 100%)",
       boxShadow: "0 2px 8px 0 rgba(0,0,0,0.04)",
       display: "flex",
       alignItems: "center",

@@ -15,11 +15,11 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   overscroll-behavior: none;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e3ecfa 50%, #f5e8fa 100%);
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: #222;
   font-family: 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
