@@ -1,32 +1,29 @@
-# Bold Text Formatter
+# Fancy Text Formatter
 
-A simple web tool to convert regular text into stylized bold Unicode characters, commonly used in WeChat and other social media platforms.
+A modern web tool to convert English text into stylish Unicode fonts (Bold Serif, Bold Sans, Italic Serif, Italic Sans) with a beautiful, Apple-inspired UI.
 
 ## Features
-- Convert text to Serif bold style (𝐀𝐁𝐂𝟏𝟐𝟑)
-- Convert text to Sans-serif bold style (𝗔𝗕𝗖𝟬𝟭𝟮)
-- Support for both uppercase and lowercase letters
-- Support for numbers
-- Preserve non-letter characters (punctuation, etc.)
-- Character count limit (2000)
-- One-click copy to clipboard
+- Convert English letters and numbers to four stylized Unicode formats
+- Preserve all other characters (Chinese, punctuation, spaces, newlines)
+- One-click copy for each result, with animated feedback
+- Live character count (max 2000)
+- Responsive, modern, colorful UI (no external UI libraries)
 
 ## Tech Stack
+- Next.js (App Router, React, TypeScript)
+- Pure CSS (custom, no UI libraries)
+- Unicode text transformation logic
+- Deployed on Vercel
 
-- React 18
-- Vite
-- CSS3 (Pure CSS, no external UI libraries)
-- Unicode text transformation
+## Deployment
+This project is automatically deployed on [Vercel](https://vercel.com/).
 
-## Development
-
+To run locally:
 ```bash
-# Install dependencies
 npm install
-
-# Start development server
 npm run dev
-
-# Build for production
-npm run build
 ```
+
+---
+
+**Author:** barnett-yuxiang
