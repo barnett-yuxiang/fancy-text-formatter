@@ -59,7 +59,7 @@ const ResultGrid: React.FC<ResultGridProps> = ({ results }) => {
         <div
           key={key}
           style={{
-            background: "#fff",
+            background: "#fcfcfd",
             borderRadius: 16,
             boxShadow: "0 2px 10px 0 rgba(0,0,0,0.04)",
             padding: 0,
@@ -72,7 +72,7 @@ const ResultGrid: React.FC<ResultGridProps> = ({ results }) => {
           }}
         >
           {/* Title bar */}
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '1.1rem 1.25rem 0.5rem 1.25rem', borderBottom: '1px solid #f0f0f0' }}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '1.1rem 1.25rem 0.5rem 1.25rem', background: '#f6f8fa', borderTopLeftRadius: 16, borderTopRightRadius: 16, borderBottom: '1px solid #f0f0f0' }}>
             <span style={{ fontWeight: 700, fontSize: 17 }}>{label}</span>
             <div style={{ display: 'flex', alignItems: 'center' }}>
               {copied[key] && (
@@ -94,6 +94,8 @@ const ResultGrid: React.FC<ResultGridProps> = ({ results }) => {
                   display: 'flex',
                   alignItems: 'center',
                 }}
+                onMouseEnter={e => e.currentTarget.style.background = '#e6eaf0'}
+                onMouseLeave={e => e.currentTarget.style.background = '#f7f8fa'}
               >
                 Copy
               </button>
@@ -109,7 +111,7 @@ const ResultGrid: React.FC<ResultGridProps> = ({ results }) => {
               maxHeight: 220,
               width: 420,
               whiteSpace: 'pre-wrap',
-              border: '1px solid #e0e3e8',
+              border: '1.5px dashed #d1d5db',
               borderRadius: 10,
               background: '#f8fafb',
               margin: 16,
