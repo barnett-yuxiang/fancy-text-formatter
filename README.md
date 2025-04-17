@@ -24,6 +24,25 @@ npm install
 npm run dev
 ```
 
+## Running Tests & Coverage
+
+This project uses **Jest** with **React Testing Library** and **ts-jest** for unit testing.
+
+- All test files are located in the `tests/` directory.
+- To run tests:
+  ```bash
+  npm test
+  ```
+- To run tests with coverage:
+  ```bash
+  npm run test:coverage
+  ```
+- To view a detailed coverage report, open `coverage/lcov-report/index.html` in your browser after running the coverage command.
+
+## Test Coverage
+- 100% coverage for the core text transformation logic (`fancyText.ts`).
+- You are encouraged to add more tests for UI components and other logic in the `tests/` directory.
+
 ---
 
 **Author:** barnett-yuxiang
