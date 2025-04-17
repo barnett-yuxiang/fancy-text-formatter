@@ -68,6 +68,16 @@ On social media and messaging platforms, users often want to highlight their tex
 - **Apple-Inspired Design**: The app uses gradients, pastel colors, and soft cards for a visually appealing, modern look.
 - **No external UI libraries**: All styling is custom and uses pure CSS/inline styles for full control.
 
+## 9. Testing & Coverage
+- **Unit Testing**: The project uses Jest, React Testing Library, and ts-jest for unit testing.
+- **Test Location**: All test files are placed in the `tests/` directory, separate from source code.
+- **Coverage**: As of now, the core text transformation logic (`fancyText.ts`) is covered 100% by unit tests.
+- **How to Run**:
+  - Run all tests: `npm test`
+  - Run with coverage: `npm run test:coverage`
+  - View detailed HTML coverage report: open `coverage/lcov-report/index.html` after running coverage.
+- **Recommendation**: Add more tests for UI components and future features to maintain high coverage.
+
 ---
 
 **Status:** All core features and design goals have been implemented as described above.
