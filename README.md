@@ -1,5 +1,7 @@
 # Fancy Text Formatter
 
+[![codecov](https://codecov.io/gh/barnett-yuxiang/fancy-text-formatter/graph/badge.svg?token=DtyVbAJw8q)](https://codecov.io/gh/barnett-yuxiang/fancy-text-formatter)
+
 A modern web tool to convert English text into stylish Unicode fonts (Bold Serif, Bold Sans, Italic Serif, Italic Sans) with a beautiful, Apple-inspired UI.
 
 ## Features
