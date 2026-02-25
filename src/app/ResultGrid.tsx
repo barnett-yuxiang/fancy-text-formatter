@@ -121,8 +121,8 @@ const ResultGrid: React.FC<ResultGridProps> = ({ results }) => {
               userSelect: 'all',
               cursor: 'default',
               overflowY: 'auto',
+              WebkitOverflowScrolling: 'touch',
               boxSizing: 'border-box',
-              overscrollBehavior: 'contain',
             }}
             tabIndex={-1}
             aria-readonly="true"
