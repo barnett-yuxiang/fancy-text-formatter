@@ -1,6 +1,6 @@
 {
   "name": "fancy-text-formatter",
-  "version": "0.2.23",
+  "version": "0.2.31",
   "private": true,
   "scripts": {
     "dev": "next dev",
